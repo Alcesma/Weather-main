@@ -5,8 +5,10 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+
 #city,
-#temperature {
+#temperature,
+#units {
   border: 2px solid #000000;
   max-width: 150px;
   border-radius: 30px;
@@ -36,26 +38,24 @@ body {
     )
     1;
 }
-
-.card {
+.icon {
   max-width: 180px;
-}
-.emoji {
-  text-align: center;
-}
-.card-text {
   text-align: center;
   font-size: 25px;
+  margin-top: 150px;
 }
+
+
 .btn-group {
   position: fixed;
   text-align: left;
   margin-top: 20px;
   margin-left: 1200px;
 }
-.date {
+#date {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #open-source {
   margin-left: 128px;
 }
+
