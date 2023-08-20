@@ -28,33 +28,28 @@
         <input type="submit" value="Search" />
       </form>
       <div id="city">Cologne, Germany</div>
-      <section id="temperature"></section>
+      <section id="temperature">
+        <ul>
+          <li id="description"></li>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind"></span> km/h</li>
+        </ul>
+      </section>
       <div class="row">
         <div class="col-6">
           <div class="clearfix weather-temperature">
             <img src="" alt="Clear" id="icon" class="float-right" />
-            <div class="float-left">
-              <strong id="temperature"></strong><span class="units"> °C</span>
-            </div>
+            <div class="float-left"></div>
           </div>
         </div>
-        <div class="col-6">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> km/h</li>
-          </ul>
-        </div>
+        <ul>
+          <li id="date">Current Time: <span></span></li>
+        </ul>
       </div>
-      <ul>
-        <span class="units">
-          <a href="#" id="celsius-link">°C</a> |
-          <a href="#" id="fahrenheit-link">°F</a>
-          <div class="weather-forecast" id="forecast"></div>
-        </span>
-        <li id="date">Current Time: <span></span></li>
-        <li id="description"></li>
-      </ul>
     </div>
+    <ul>
+      <div class="weather-forecast" id="forecast"></div>
+    </ul>
     <div id="icon"></div>
     <div class="btn-group" role="group" aria-label="Basic example">
       <button type="button" class="btn btn-secondary">Berlin</button>
@@ -66,6 +61,7 @@
     <canvas id="scatterChart"></canvas>
     <script src="src/script.js"></script>
     <a href="https://github.com/Alcesma/Weather-main" id="open-source"
-      >Open-source</a>
+      >Open-source</a
+    >
   </body>
 </html>
